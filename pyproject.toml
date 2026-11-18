@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iot-city"
+version = "0.1.0"
+description = "Predictive high-efficient IoT data analytics using machine learning for smart city applications"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.scripts]
+iot-city = "iot_city.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
